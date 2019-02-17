@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>蹭课查询</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-4.0.0.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-4.0.0.js')}}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="container" style="width: 320px;">
+    <div style="height: 38%;width: 100%;position: relative;">
+        <div style="position: absolute;bottom: 0px; width: 100%">
+            {% include '_title.html' %}
+            <br>
+            {% include '_search.html' %}
+        </div>
+    </div>
+    <br>
+        {% include '_confirm_card.html' %}
+    <div style="height: 150px;"></div>
+
+</body>
+</html>

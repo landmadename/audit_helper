@@ -1,0 +1,30 @@
+body{
+    background-color: #e3b4b8;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+.acard{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:6px 6px 10px #666;
+}
+
+.ttl{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #d11a2d;
+}
+
+.show_less {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}

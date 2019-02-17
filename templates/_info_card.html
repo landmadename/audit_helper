@@ -1,0 +1,19 @@
+<div class="acard">
+    {% for i in data %}
+    <div>
+        <div class="card-header" id="heading{{i.teacher_name}}" data-toggle="collapse" data-target="#collapse{{i.teacher_name}}" aria-expanded="true" aria-controls="collapseOne" style="color: white;background-color: #ed556a;">
+                {{i.teacher_name}}
+        </div>
+        <div id="collapse{{i.teacher_name}}" class="collapse" aria-labelledby="heading{{i.teacher_name}}" data-parent="#accordion">
+            <div>
+                <ul class="list-group">
+                {% for ii in i.data %}
+                    <li class="list-group-item">{{ii}}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<br>

@@ -1,7 +1,10 @@
+import os
 from flask import Flask, render_template, flash, redirect
 from flask import url_for, request, send_from_directory
 import audit_helper
 
+if os.getcwd() == '/home/lmn':
+    os.chdir('/home/lmn/audit_helper')
 app = Flask(__name__)
 app.secret_key = 'lalalalololo'
 app.config.from_pyfile('settings.py')

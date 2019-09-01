@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript">
         function pick(i) {
-            $('#box').append('<li class="list-group-item list-group-item-action item" onclick="pick(this)" style="background-color: #c02c38;color: white;text-align: center;">'+$(i).text()+'</li>')
+            var c = "'/get_class?data="+$(i).text()+"'"
+            $('#box').append('<li class="list-group-item list-group-item-action item" onclick="window.open('+c+')" style="background-color: #c02c38;color: white;text-align: center;">'+$(i).text()+'</li>')
         }
     </script>
 </head>
